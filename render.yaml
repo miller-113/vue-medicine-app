@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: strapi
+    env: node
+    plan: starter
+    buildCommand: yarn install && yarn build
+    startCommand: rsync -a public/ /data/public/ && yarn start
+    healthCheckPath: /_health
+    autoDeploy: false
+    disk:
+      name: strapi-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: ~20.11.1
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_FILENAME
+        value: /data/strapi.db
