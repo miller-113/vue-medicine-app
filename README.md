@@ -28,3 +28,17 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Build command
+'''
+npm install && npm run build && cd backend && npm install && npm run build
+'''
+## Start command
+'''
+NODE_OPTIONS="--max-old-space-size=4096" npm run serve && cd backend && npm run start
+'''
+## Deployees
+# front
+https://vue-meedicine-app-front.onrender.com/
+# back
+https://vue-medicine-app.onrender.com/admin/

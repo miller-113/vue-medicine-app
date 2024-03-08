@@ -6,13 +6,12 @@ services:
       context: .
       dockerfile: Dockerfile.frontend
     ports:
-      - "8080:8080"  # Пробрасываем порт Vue.js приложения
+      - "8080:8080"
 
   backend:
     build:
       context: .
       dockerfile: Dockerfile.backend
     ports:
-      - "1337:1337"  # Пробрасываем порт Strapi приложения
+      - "1337:1337"
 
-    # Здесь вы также можете указать другие настройки, например, переменные окружения для бэкенда Strapi
