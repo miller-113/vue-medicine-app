@@ -72,7 +72,8 @@ export default {
         localStorage.setItem('cart', JSON.stringify(newItems));
       }
     },
-  }
+  },
+
 }
 </script>
 

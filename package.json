@@ -8,13 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@vue/cli": "^5.0.8",
-    "@vue/cli-service": "^5.0.8",
     "axios": "^1.6.7",
     "core-js": "^3.8.3",
     "pinia": "^2.1.7",
-    "vue": "^3.4.21",
-    "vue-cli": "^2.9.6"
+    "vue": "^3.4.21"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -39,7 +36,7 @@
     "rules": {}
   },
   "browserslist": [
-    "> 1%",
+    "> 80%",
     "last 2 versions",
     "not dead",
     "not ie 11"
