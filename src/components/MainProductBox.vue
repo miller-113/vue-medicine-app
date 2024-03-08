@@ -67,7 +67,7 @@ export default {
             this.favorites = newFavorites;
         },
         async getProducts() {
-            const productUrl = "http://localhost:1337/api/products";
+            const productUrl = "https://vue-medicine-app.onrender.com/api/products";
             try {
                 const response = await axios.get(productUrl);
                 this.products = response.data.data;

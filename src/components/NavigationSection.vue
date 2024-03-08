@@ -22,7 +22,7 @@ export default {
     methods: {
         async getShops() {
             try {
-                const response = await axios.get("http://localhost:1337/api/shops");
+                const response = await axios.get("https://vue-medicine-app.onrender.com/api/shops");
                 this.shops = response.data.data;
             } catch (error) {
                 console.error(error)

@@ -49,7 +49,7 @@ export default {
   methods: {
     async getProducts() {
       try {
-        const response = await axios.get("http://localhost:1337/api/products");
+        const response = await axios.get("https://vue-medicine-app.onrender.com/api/products");
         this.products = response.data.data;
       } catch (error) {
         console.error("Error fetching products:", error);

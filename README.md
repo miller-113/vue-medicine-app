@@ -28,3 +28,13 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### render Web service
+## Build command
+'''
+npm install && npm run build && cd backend && npm install && npm run build
+'''
+## Start command
+'''
+NODE_OPTIONS="--max-old-space-size=4096" npm run serve && cd backend && npm run start
+'''

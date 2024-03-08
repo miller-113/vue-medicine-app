@@ -112,7 +112,7 @@ export default {
     },
     methods: {
          async submitOrder(e) {
-            const url = 'http://localhost:1337/api/orders';
+            const url = 'https://vue-medicine-app.onrender.com/api/orders';
             const orderData = {
                 "data": {
                     "Name": this.name,
